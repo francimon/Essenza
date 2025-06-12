@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Planes de Suscripción</title>
+  <!-- Fuente Convergence -->
+  <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Georgia', serif;
+      font-family: 'Convergence', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f0f0f0;
     }
-
     .container {
       display: flex;
       justify-content: center;
@@ -19,7 +21,6 @@
       padding: 40px 20px;
       flex-wrap: wrap;
     }
-
     .card {
       background-color: white;
       border-radius: 12px;
@@ -29,53 +30,46 @@
       display: flex;
       flex-direction: column;
     }
-
     .card img {
       width: 100%;
       height: 160px;
       object-fit: cover;
     }
-
     .card h2 {
       margin: 16px;
       font-size: 1.5em;
     }
-
     .card p.price {
       margin: 0 16px;
       font-weight: bold;
       font-size: 1.2em;
       color: #111;
     }
-
     .card ul {
       list-style: none;
       padding: 0 16px;
       margin: 16px 0;
     }
-
     .card ul li {
       margin-bottom: 10px;
     }
-
     .card ul li::before {
       content: "✔️";
       margin-right: 8px;
       color: #111;
     }
-
-    .card button {
+    .card a.button {
       background-color: black;
       color: white;
-      border: none;
+      text-align: center;
+      text-decoration: none;
       padding: 12px;
       margin: 16px;
       border-radius: 8px;
-      cursor: pointer;
       font-weight: bold;
+      display: block;
     }
-
-    .card button:hover {
+    .card a.button:hover {
       background-color: #333;
     }
   </style>
@@ -84,7 +78,7 @@
   <div class="container">
     <!-- Classic -->
     <div class="card">
-      <img src="https://tu-dominio.com/imagenes/classic.jpg" alt="Classic">
+      <img src="classic.jpg" alt="Classic">
       <h2>Classic</h2>
       <p class="price">$35.000 <small>pesos/mes</small></p>
       <ul>
@@ -93,12 +87,12 @@
         <li>Envío gratis en todas tus compras</li>
         <li>Acceso a ventas privadas bimensuales</li>
       </ul>
-      <button>Suscribirse a Classic</button>
+      <a class="button" href="https://wa.me/5492634573310?text=Hola%2C%20quiero%20suscribirme%20a%20la%20membresía%20Classic" target="_blank">Suscribirse a Classic</a>
     </div>
 
     <!-- Prive -->
     <div class="card">
-      <img src="https://tu-dominio.com/imagenes/prive.jpg" alt="Prive">
+      <img src="prive.jpg" alt="Prive">
       <h2>Prive</h2>
       <p class="price">$53.000 <small>pesos/mes</small></p>
       <ul>
@@ -108,12 +102,12 @@
         <li>Acceso anticipado a lanzamientos</li>
         <li>Regalo de cumpleaños exclusivo</li>
       </ul>
-      <button>Suscribirse a Prive</button>
+      <a class="button" href="https://wa.me/5492634573310?text=Hola%2C%20quiero%20suscribirme%20a%20la%20membresía%20Prive" target="_blank">Suscribirse a Prive</a>
     </div>
 
     <!-- Elite -->
     <div class="card">
-      <img src="https://tu-dominio.com/imagenes/elite.jpg" alt="Elite">
+      <img src="elite.jpg" alt="Elite">
       <h2>Elite</h2>
       <p class="price">$150.000 <small>pesos/mes</small></p>
       <ul>
@@ -124,8 +118,9 @@
         <li>Consultoría olfativa personalizada</li>
         <li>Invitaciones a eventos VIP</li>
       </ul>
-      <button>Suscribirse a Elite</button>
+      <a class="button" href="https://wa.me/5492634573310?text=Hola%2C%20quiero%20suscribirme%20a%20la%20membresía%20Elite" target="_blank">Suscribirse a Elite</a>
     </div>
   </div>
 </body>
 </html>
+
